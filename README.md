@@ -52,6 +52,26 @@ SELECT * FROM TaskItem WHERE UserId = @UserId;
 SELECT * FROM TaskComment WHERE TaskId = @TaskId;
 ```
 
+---
+
+## Unit Testing
+
+### Test Frameworks Used
+- **NUnit**
+- **Moq**
+- **EF Core InMemory** for isolated data
+
+### How to Run Tests (Visual Studio)
+1. Open the solution in Visual Studio.
+2. Open **Test Explorer** (Test → Test Explorer).
+3. Click **Run All**.
+
+### Test Cases Included
+- CreateTask_ShouldReturnOkAndPersist_WhenValid  
+- GetTask_ShouldReturnOk_WhenExists  
+- GetTask_ShouldReturnNotFound_WhenMissing  
+- GetTasksByUser_ShouldReturnOnlyThatUserTasks  
+
 
 
 
