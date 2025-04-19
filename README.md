@@ -40,3 +40,18 @@ The application uses three main tables:
 ## ER Diagram
 
 ![TaskMangementAPI Diagram](https://github.com/user-attachments/assets/b998d6f3-7e7e-46e0-b71e-4de16dd17dee)
+
+## 📑 Sample SQL Queries
+
+### 1. Get all tasks assigned to a user
+```sql
+SELECT * FROM TaskItem WHERE UserId = @UserId;
+```
+### 1. 2. Get all comments on a task
+```sql
+SELECT * FROM TaskComment WHERE TaskId = @TaskId;
+```
+
+
+
+
