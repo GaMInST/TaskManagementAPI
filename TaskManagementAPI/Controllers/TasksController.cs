@@ -19,20 +19,22 @@ public class TasksController : ControllerBase
     public async Task<IActionResult> CreateTask([FromBody] CreateTaskDto createTaskDto)
     {
         if (!ModelState.IsValid)
+        {
             return BadRequest(ModelState);
+        }
 
-        var taskItem = new TaskItem
+        var task = new TaskItem
         {
             Title = createTaskDto.Title,
             Description = createTaskDto.Description,
             AssignedUserId = createTaskDto.AssignedUserId
         };
 
-        _dbContext.TaskItems.Add(taskItem);
+        _dbContext.TaskItems.Add(task);
         await _dbContext.SaveChangesAsync();
-
-        return Ok(taskItem);
+        return Ok(task);
     }
+
 
 
     // GET /api/tasks/{id}
