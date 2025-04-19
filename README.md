@@ -41,7 +41,7 @@ The application uses three main tables:
 
 ![TaskMangementAPI Diagram](https://github.com/user-attachments/assets/b998d6f3-7e7e-46e0-b71e-4de16dd17dee)
 
-## 📑 Sample SQL Queries
+## Sample SQL Queries
 
 ### 1. Get all tasks assigned to a user
 ```sql
