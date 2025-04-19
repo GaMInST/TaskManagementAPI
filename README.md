@@ -27,3 +27,16 @@ It allows:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/GaMInST/TaskManagementAPI.git
+## Database Schema
+
+The application uses three main tables:
+
+- **Users**
+- **Tasks**
+- **TaskComments**
+
+---
+
+## ER Diagram
+
+![TaskMangementAPI Diagram](https://github.com/user-attachments/assets/b998d6f3-7e7e-46e0-b71e-4de16dd17dee)
